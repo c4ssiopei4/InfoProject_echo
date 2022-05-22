@@ -28,7 +28,7 @@ def write():
 
 # enabling receive & write function at the same time 
 receive_thread = threading.Thread(target=receive) # applied to receive function
-receive_thread.start
+receive_thread.start()
 
 write_thread = threading.Thread(target=write) # applied to write funciton
-write_thread.start
+write_thread.start()
